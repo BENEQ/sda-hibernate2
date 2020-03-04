@@ -29,7 +29,7 @@ public class przyklad3 {
         bankomat2.getUzytkownicy().add(uzytkownik2);
         session.persist(bankomat1);
         session.persist(bankomat2);
-        session.flush();
+        session.getTransaction().commit();
         session.close();
     }
 }

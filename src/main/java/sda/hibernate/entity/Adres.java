@@ -18,7 +18,7 @@ public class Adres {
     @Column
     private String miejscowosc;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne//(cascade = CascadeType.ALL)
     @JoinColumn(name = "idUzytkownika", unique = true)
     //Strona posiadajaca relacje
     private Uzytkownik uzytkownik;
